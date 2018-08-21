@@ -6,10 +6,11 @@ class RingBuffer:
     self.storage = []
 
   def append(self, item):
-    self.storage[self.current++] = item
+    self.current += 1
+    self.storage[self.current] = item
 
-    if self.current = self.capacity:
+    if self.current == self.capacity:
       self.current = 0
 
-  def get():
+  def get(self):
     return self.storage
