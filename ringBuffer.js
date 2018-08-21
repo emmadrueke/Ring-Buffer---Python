@@ -10,7 +10,7 @@ class Buffer {
       this.current = 0
     }
   }
-  get(item) {
+  get() {
     return this.storage
   }
 }
